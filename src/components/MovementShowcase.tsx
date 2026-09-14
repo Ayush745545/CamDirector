@@ -69,6 +69,15 @@ export function MovementShowcase() {
                     loop
                     playsInline
                   />
+                ) : movement.name === 'Tracking' ? (
+                  <video
+                    className="dolly-video"
+                    src="/Tracking.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  />
                 ) : (
                   <>
                     <div className="mini-grid" />
@@ -92,13 +101,6 @@ export function MovementShowcase() {
                       <Icon size={15} />
                     </motion.div>
                   </>
-                )}
-
-                {movement.name === 'Tracking' && (
-                  <div className="movement-hud">
-                    <span>AI PATH</span>
-                    <strong>ACTIVE</strong>
-                  </div>
                 )}
               </div>
 
