@@ -57,15 +57,22 @@ button {
   display: flex;
   align-items: center;
   gap: 9px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  color: #111;
+}
+
+.logo > span:last-child {
+  color: #111;
 }
 
 .logo-mark {
-  width: 40px;
-  height: 40px;
+  width: 28px;
+  height: 28px;
   display: block;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 1px 6px rgba(0,0,0,.15);
 }
 
 .navbar nav {

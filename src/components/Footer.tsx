@@ -6,6 +6,7 @@ export function Footer() {
       <div className="footer-brand">
       <a className="logo" href="#">
         <img src="/logo.png" alt="CamDirector" className="logo-mark" />
+        CamDirector
       </a>
 
         <p>AI-powered cinematic camera direction.</p>
