@@ -17,6 +17,7 @@ export function Navbar() {
 
       <a className="nav-cta" href="#start">
         Open Studio
+        <small>Live Soon</small>
         <ArrowUpRight size={15} />
       </a>
     </header>
