@@ -49,7 +49,6 @@ export function MovementShowcase() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.12 }}
-              whileHover={{ y: -6 }}
             >
               <div className="movement-preview">
                 {movement.name === 'Dolly In' ? (
