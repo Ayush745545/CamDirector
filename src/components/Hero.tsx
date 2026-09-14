@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 
 import { Canvas, useFrame } from '@react-three/fiber'
-import { Environment, PerspectiveCamera } from '@react-three/drei'
+import { PerspectiveCamera } from '@react-three/drei'
 import { ArrowRight, Play, Sparkles } from 'lucide-react'
 import { useRef } from 'react'
 import * as THREE from 'three'
@@ -313,7 +313,6 @@ function Scene() {
       <Set />
       <Character />
 
-      <Environment preset="night" />
     </>
   )
 }

@@ -4533,3 +4533,109 @@ button {
     height: 520px !important;
   }
 }
+
+/* CINEMATIC HERO 3D FIX */
+.cinematic-hero {
+  position: relative !important;
+  min-height: 620px !important;
+  height: 620px !important;
+  overflow: hidden !important;
+  background: #050705 !important;
+}
+
+.cinematic-hero > canvas {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  z-index: 1 !important;
+}
+
+.cinematic-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.cinematic-top,
+.cinematic-bottom {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: rgba(235, 245, 232, 0.65);
+}
+
+.cinematic-top {
+  top: 22px;
+}
+
+.cinematic-bottom {
+  bottom: 22px;
+}
+
+.rec-dot {
+  color: #b9ff39;
+}
+
+.cinematic-frame-lines {
+  position: absolute;
+  inset: 9%;
+  border: 1px solid rgba(185, 255, 57, 0.18);
+}
+
+.cinematic-frame-lines::before,
+.cinematic-frame-lines::after {
+  content: "";
+  position: absolute;
+  background: rgba(185, 255, 57, 0.3);
+}
+
+.cinematic-frame-lines::before {
+  width: 1px;
+  height: 100%;
+  left: 50%;
+}
+
+.cinematic-frame-lines::after {
+  height: 1px;
+  width: 100%;
+  top: 50%;
+}
+
+.cinematic-caption {
+  position: absolute;
+  z-index: 4;
+  left: 28px;
+  bottom: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  pointer-events: none;
+}
+
+.cinematic-caption small {
+  color: rgba(235, 245, 232, 0.45);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+}
+
+.cinematic-caption strong {
+  color: #b9ff39;
+  font-family: monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+@media (max-width: 900px) {
+  .cinematic-hero {
+    min-height: 520px !important;
+    height: 520px !important;
+  }
+}
