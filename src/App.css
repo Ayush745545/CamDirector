@@ -70,10 +70,8 @@ button {
   height: 25px;
   display: grid;
   place-items: center;
-  border: 1px solid var(--lime);
-  color: var(--lime);
   border-radius: 50%;
-  font-size: 12px;
+  object-fit: cover;
 }
 
 .navbar nav {

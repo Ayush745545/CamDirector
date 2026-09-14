@@ -7,7 +7,7 @@ export function Navbar() {
   return (
     <header className="navbar">
       <a className="logo" href="#">
-        <span className="logo-mark">◉</span>
+        <img src="/logo.png" alt="CamDirector" className="logo-mark" />
         CamDirector
       </a>
 
