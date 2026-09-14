@@ -332,7 +332,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          Describe the shot you imagine. Camera AI turns your idea into
+          Describe the shot you imagine. CamDirector turns your idea into
           cinematic camera movement, ready for Blender.
         </motion.p>
 

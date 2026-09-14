@@ -4,7 +4,7 @@ import { Camera, Gauge, Layers3, Wand2 } from 'lucide-react'
 const features = [
   {
     icon: Camera,
-    title: 'Cinematic Camera AI',
+    title: 'Cinematic CamDirector',
     text: 'Generate intentional camera movements from simple natural-language direction.',
   },
   {

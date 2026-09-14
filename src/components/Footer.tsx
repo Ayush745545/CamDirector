@@ -31,7 +31,7 @@ export function Footer() {
       </a>
 
       <div className="footer-bottom">
-        <span>© 2026 Camera AI</span>
+        <span>© 2026 CamDirector</span>
         <span>Built for filmmakers & creators</span>
       </div>
     </footer>

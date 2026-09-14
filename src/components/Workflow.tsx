@@ -11,7 +11,7 @@ const steps = [
   {
     number: '02',
     title: 'AI Plans',
-    text: 'Camera AI understands your shot and builds the movement.',
+    text: 'CamDirector understands your shot and builds the movement.',
     icon: Brain,
   },
   {

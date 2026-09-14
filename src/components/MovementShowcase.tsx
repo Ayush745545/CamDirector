@@ -32,7 +32,7 @@ export function MovementShowcase() {
         </div>
 
         <p>
-          Choose a movement, describe the intention, and Camera AI creates
+          Choose a movement, describe the intention, and CamDirector creates
           the path automatically.
         </p>
       </div>
