@@ -52,35 +52,46 @@ export function MovementShowcase() {
               whileHover={{ y: -6 }}
             >
               <div className="movement-preview">
-                <div className="mini-grid" />
+                {movement.name === 'Dolly In' ? (
+                  <video
+                    className="dolly-video"
+                    src="/DollyIn.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  />
+                ) : (
+                  <>
+                    <div className="mini-grid" />
+                    <div className="mini-subject" />
+                    <svg
+                      className="movement-path"
+                      viewBox="0 0 320 150"
+                      preserveAspectRatio="none"
+                    >
+                      <path d={movement.path} />
+                    </svg>
+                    <motion.div
+                      className="moving-camera"
+                      animate={{ x: [0, 110, 220, 110, 0] }}
+                      transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        ease: 'easeInOut',
+                      }}
+                    >
+                      <Icon size={15} />
+                    </motion.div>
+                  </>
+                )}
 
-                <div className="mini-subject" />
-
-                <svg
-                  className="movement-path"
-                  viewBox="0 0 320 150"
-                  preserveAspectRatio="none"
-                >
-                  <path d={movement.path} />
-                </svg>
-
-                <motion.div
-                  className="moving-camera"
-                  animate={{ x: [0, 110, 220, 110, 0] }}
-                  transition={{
-                    duration: 5,
-                    repeat: Infinity,
-                    ease: 'easeInOut',
-                  }}
-                >
-                  <Icon size={15} />
-                </motion.div>
-
-                <div className="movement-hud">
-                  <span>AI PATH</span>
-                  <strong>ACTIVE</strong>
-                </div>
-              </div>
+                {movement.name !== 'Dolly In' && (
+                  <div className="movement-hud">
+                    <span>AI PATH</span>
+                    <strong>ACTIVE</strong>
+                  </div>
+                )}
 
               <div className="movement-info">
                 <div className="movement-icon">
