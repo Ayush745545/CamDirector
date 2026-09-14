@@ -60,6 +60,15 @@ export function MovementShowcase() {
                     loop
                     playsInline
                   />
+                ) : movement.name === 'Orbit' ? (
+                  <video
+                    className="dolly-video"
+                    src="/Orbit.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  />
                 ) : (
                   <>
                     <div className="mini-grid" />
@@ -85,7 +94,7 @@ export function MovementShowcase() {
                   </>
                 )}
 
-                {movement.name !== 'Dolly In' && (
+                {movement.name === 'Tracking' && (
                   <div className="movement-hud">
                     <span>AI PATH</span>
                     <strong>ACTIVE</strong>
