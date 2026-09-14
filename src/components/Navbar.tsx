@@ -8,7 +8,6 @@ export function Navbar() {
     <header className="navbar">
       <a className="logo" href="#">
         <img src="/logo.png" alt="CamDirector" className="logo-mark" />
-        CamDirector
       </a>
 
       <nav>

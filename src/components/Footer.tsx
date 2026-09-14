@@ -4,10 +4,9 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="footer-brand">
-        <a className="logo" href="#">
-          <img src="/logo.png" alt="CamDirector" className="logo-mark" />
-          CamDirector
-        </a>
+      <a className="logo" href="#">
+        <img src="/logo.png" alt="CamDirector" className="logo-mark" />
+      </a>
 
         <p>AI-powered cinematic camera direction.</p>
       </div>
