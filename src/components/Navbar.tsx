@@ -8,7 +8,7 @@ export function Navbar() {
     <header className="navbar">
       <a className="logo" href="#">
         <span className="logo-mark">◉</span>
-        CAMERA<span>AI</span>
+        CamDirector
       </a>
 
       <nav>

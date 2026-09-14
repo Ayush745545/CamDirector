@@ -6,7 +6,7 @@ export function Footer() {
       <div className="footer-brand">
         <a className="logo" href="#">
           <span className="logo-mark">◉</span>
-          CAMERA<span>AI</span>
+          CamDirector
         </a>
 
         <p>AI-powered cinematic camera direction.</p>
