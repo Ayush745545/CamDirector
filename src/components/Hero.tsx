@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 
+import { useState } from 'react'
+
 
 import { Canvas, useFrame } from '@react-three/fiber'
 import { PerspectiveCamera } from '@react-three/drei'
@@ -318,6 +320,8 @@ function Scene() {
 }
 
 export function Hero() {
+  const [showPopup, setShowPopup] = useState(false)
+
   return (
     <section className="hero">
       <div className="hero-copy">
@@ -355,7 +359,14 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
-          <a className="primary-button" href="#start">
+          <a
+            className="primary-button"
+            href="#start"
+            onClick={(e) => {
+              e.preventDefault()
+              setShowPopup(true)
+            }}
+          >
             Create Your Shot
             <ArrowRight size={17} />
           </a>
@@ -405,6 +416,16 @@ export function Hero() {
           <strong>FRONT → ORBIT → BACK</strong>
         </div>
       </div>
+
+      {showPopup && (
+        <div className="nav-popup">
+          <div className="popup-content">
+            <strong>Coming Soon</strong>
+            <p>Create Your Shot is launching soon. Stay tuned!</p>
+            <button onClick={() => setShowPopup(false)}>Close</button>
+          </div>
+        </div>
+      )}
     </section>
   )
 }

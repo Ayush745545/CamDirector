@@ -119,6 +119,52 @@ button {
   opacity: 0.7;
 }
 
+.nav-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+.popup-content {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.popup-content strong {
+  font-size: 20px;
+  color: var(--lime);
+}
+
+.popup-content p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.popup-content button {
+  align-self: center;
+  padding: 10px 24px;
+  background: var(--lime);
+  color: #080a06;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .nav-cta:hover,
 .secondary-button:hover,
 .outline-button:hover {
