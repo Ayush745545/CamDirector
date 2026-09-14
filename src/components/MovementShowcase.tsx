@@ -92,6 +92,7 @@ export function MovementShowcase() {
                     <strong>ACTIVE</strong>
                   </div>
                 )}
+              </div>
 
               <div className="movement-info">
                 <div className="movement-icon">
