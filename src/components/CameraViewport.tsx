@@ -3,7 +3,6 @@ import { Line, OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import { Pause, Play, Settings2 } from 'lucide-react'
 import { useMemo, useRef, useState } from 'react'
 import * as THREE from 'three'
-import { ShotPreview } from './ShotPreview'
 
 const GREEN = '#b9ff39'
 
@@ -346,18 +345,6 @@ export function CameraViewport() {
               <DirectorScene />
             </Canvas>
 
-            <div className="scene-hud top-left-hud">
-              <span>SUBJECT</span>
-              <strong>CHARACTER_001</strong>
-              <small>ANIMATED / REAL-TIME</small>
-            </div>
-
-            <div className="scene-hud top-right-hud">
-              <span>CAMERA</span>
-              <strong>CAMERA_001</strong>
-              <small>35MM · TRACKING</small>
-            </div>
-
             <div className="director-bottom">
               <div>
                 <span>LENS</span>
@@ -385,8 +372,6 @@ export function CameraViewport() {
             </div>
 
           </div>
-
-          <ShotPreview />
 
         </div>
 
