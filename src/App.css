@@ -1191,6 +1191,14 @@ button {
   align-items: start;
 }
 
+.footer-brand .logo {
+  color: #fff;
+}
+
+.footer-brand .logo > * {
+  color: #fff;
+}
+
 .footer-brand p {
   color: #60675d;
   font-size: 12px;
