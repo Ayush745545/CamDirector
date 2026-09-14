@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Line, OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import { Pause, Play, Sparkles } from 'lucide-react'
@@ -368,22 +369,40 @@ export function CameraViewport() {
 
   return (
     <section className="viewport-section">
-      <div className="section-heading">
-        <span className="section-number">
+      <motion.div
+        className="section-heading"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <motion.span
+          className="section-number"
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+        >
           01 / LIVE 3D CAMERA DIRECTOR
-        </span>
+        </motion.span>
 
-        <h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+        >
           See the camera move
           <br />
           <em>before you render.</em>
-        </h2>
+        </motion.h2>
 
-        <p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+        >
           Direct the camera, watch the character move,
           and see exactly what the camera is capturing.
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
 
       <div
         className="cinematic-director"
