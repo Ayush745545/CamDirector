@@ -21,7 +21,7 @@ export function Footer() {
 
       <a
         className="linkedin-link"
-        href="https://www.linkedin.com/"
+        href="https://www.linkedin.com/in/ayush-chaudhary-7b2a32304/"
         target="_blank"
         rel="noreferrer"
       >
