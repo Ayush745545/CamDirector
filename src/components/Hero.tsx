@@ -2,7 +2,7 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { PerspectiveCamera } from '@react-three/drei'
 import { motion } from 'framer-motion'
 import { ArrowRight, Play, Sparkles } from 'lucide-react'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import * as THREE from 'three'
 
 const GREEN = '#b9ff39'
@@ -303,6 +303,8 @@ function Scene() {
 }
 
 export function Hero() {
+  const [showPopup, setShowPopup] = useState(false)
+
   return (
     <section className="hero">
       <div className="hero-copy">
@@ -340,7 +342,14 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
-          <a className="primary-button" href="#start">
+          <a
+            className="primary-button"
+            href="#start"
+            onClick={(e) => {
+              e.preventDefault()
+              setShowPopup(true)
+            }}
+          >
             Create Your Shot
             <ArrowRight size={17} />
           </a>
@@ -422,6 +431,15 @@ export function Hero() {
           <strong>SMOOTH CINEMATIC PATH</strong>
         </div>
       </div>
+
+      {showPopup && (
+        <div className="hero-popup-overlay" onClick={() => setShowPopup(false)}>
+          <div className="hero-popup" onClick={(e) => e.stopPropagation()}>
+            <strong>Create Your Shot Live Soon</strong>
+            <button onClick={() => setShowPopup(false)}>Close</button>
+          </div>
+        </div>
+      )}
     </section>
   )
 }
