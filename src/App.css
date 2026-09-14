@@ -835,23 +835,12 @@ button {
   border-radius: 12px;
   overflow: hidden;
   background: #090c09;
-  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
-}
-
-.movement-card:hover {
-  transform: scale(1.04);
-  border-color: rgba(184,255,61,.25);
-  box-shadow: 0 8px 40px rgba(0,0,0,.3), 0 0 30px rgba(184,255,61,.05);
 }
 
 .movement-preview {
   height: 270px;
   position: relative;
   overflow: hidden;
-}
-
-.movement-preview:hover .dolly-video {
-  transform: scale(1.08);
 }
 
 .mini-grid {
