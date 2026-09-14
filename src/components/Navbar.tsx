@@ -35,7 +35,6 @@ export function Navbar() {
         <div className="nav-popup">
           <div className="popup-content">
             <strong>Studio Live Soon</strong>
-            <p>Click studio is coming live soon. Stay tuned!</p>
             <button onClick={() => setShowPopup(false)}>Close</button>
           </div>
         </div>

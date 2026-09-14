@@ -421,7 +421,6 @@ export function Hero() {
         <div className="nav-popup">
           <div className="popup-content">
             <strong>Coming Soon</strong>
-            <p>Create Your Shot is launching soon. Stay tuned!</p>
             <button onClick={() => setShowPopup(false)}>Close</button>
           </div>
         </div>
